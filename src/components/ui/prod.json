@@ -1,0 +1,41 @@
+[{
+  "id": "59",
+  "name": "Молоток",
+  "price": "100.00",
+  "exist": "100",
+  "oldPrice": "99.00",
+  "description": "Красит ногти!",
+  "src": "http://127.0.0.1:8000/images/%D0%9C%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%BA.jpg",
+  "categories": "59"
+},
+{
+  "id": "61",
+  "name": "Перфоратор",
+  "price": "5000.00",
+  "exist": "3",
+  "oldPrice": "7097.00",
+  "description": "Перфорирует...",
+  "src": "http://127.0.0.1:8000/images/%D0%BF%D0%B5%D1%80%D1%84.jpg",
+  "categories": "61"
+},
+{
+  "id": "62",
+  "name": "Ручка",
+  "price": "50.00",
+  "exist": "99",
+  "oldPrice": "199.00",
+  "description": "Интеллект + 15\r\nУрон + 3",
+  "src": "http://127.0.0.1:8000/images/_20130309_1436438488_sTKl2iP.png",
+  "categories": "59"
+},
+{
+  "id": "63",
+  "name": "пила",
+  "price": "999.00",
+  "exist": "1",
+  "oldPrice": "9999.00",
+  "description": "Нет друзей..(",
+  "src": null,
+  "categories": "60"
+}
+]

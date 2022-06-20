@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Cuprum';
+};
+
+/* Правила для ссылок */
+a:link { /*Непосещенная*/
+  color: #ffffff;
+  text-decoration: none;
+}
+a:visited { /*Посещенная — по которой уже выполнялся переход*/
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover { /*Не нажатая — над которой находится указатель мыши*/
+  color: #2A1B3D;
+  text-decoration: none;
+}
+a:active { /*Нажатая*/
+  color: #A4B3B6;
+  text-decoration: none;
+}
+
+/* Общие правила для header*/
+.header {
+  background-color: #A4B3B6;
+  width: 1200px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Правила для самой верхней части header */
+.header-top {
+  background-color: #2A1B3D;
+  width: 1200px;
+  height: 42px;
+  display: grid;
+  grid-template-columns: 350px 340px 117px 110px 280px;
+  grid-template-rows: 42px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-top_items-1 { /* Правила для элементов */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-top: 0px;
+  margin-left: 130px;
+}
+.header-top_items-2 { /* Правила для элементов */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 9px;
+  margin-left: 20px;
+}
+/* .header-top_items-2 input{
+
+} */
+.header-top_items-3 { /* Правила для элементов */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-top: 9px;
+  margin-left: 20px;
+}
+.header-top_items-4 { /* Правила для элементов */
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-top: 9px;
+  margin-left: 20px;
+}
+.header-top_items-5 { /* Правила для элементов */
+  grid-column-start: 5;
+  grid-column-end: 6;
+  margin-right: 130px;
+}
+.header-top_items-5 input{ /*Блок ОФОРМИТЬ ЗАКАЗ*/
+  width: 150px;
+  height: 42px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 40px 40px #D83F87 inset, 0 0 0 0 #D83F87;
+  letter-spacing: 0px;
+  color: #ffffff;
+  transition: .15s ease-in-out;
+  border: 0px;
+}
+.header-top_items-5 input:hover {
+  box-shadow: 0 0 10px 0 #D83F87 inset, 0 0 10px 4px #D83F87;
+  color: #D83F87;
+}
+
+.header-top form {/* Правила для форм в элементах */
+  display: inline;
+  margin-left: 10px;
+}
+.header-top img {/* Правила для изображений в элементах */
+  display: inline;
+  margin-right: 5px;
+}
+
+/* Правила для средней части header */
+.header-middle {
+  background-color: #A4B3B6;
+  width: 1200px;
+  height: 158px;
+  display: grid;
+  grid-template-columns: 357px 368px 190px 280px;
+  grid-template-rows: 158px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-middle_items-1 { /* Правила для элементов */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-top: 46px;
+  margin-left: 160px;
+}
+.header-middle_items-2 { /* Правила для элементов */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 46px;
+  margin-left: 93px;
+}
+.header-middle_items-3 { /* Правила для элементов */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-top: 46px;
+  margin-left: 69px;
+}
+.header-middle_items-3 input{
+  width: 121px;
+  height: 45px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 40px 40px #D83F87 inset, 0 0 0 0 #D83F87;
+  letter-spacing: 0px;
+  color: #ffffff;
+  transition: .15s ease-in-out;
+  border: 0px;
+}
+.header-middle_items-3 input:hover {
+  box-shadow: 0 0 10px 0 #D83F87 inset, 0 0 10px 4px #D83F87;
+  color: #D83F87;
+}
+.header-middle_items-4 { /* Правила для элементов */
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-top: 46px;
+  margin-right: 130px;
+  margin-left: 10px;
+}
+.header-middle_items-4 input{
+  width: 150px;
+  height: 45px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 40px 40px #D83F87 inset, 0 0 0 0 #D83F87;
+  letter-spacing: 0px;
+  color: #ffffff;
+  transition: .15s ease-in-out;
+  border: 0px;
+}
+.header-middle_items-4 input:hover {
+  box-shadow: 0 0 10px 0 #D83F87 inset, 0 0 10px 4px #D83F87;
+  color: #D83F87;
+}
+
+/* Общие правила для блока навигации*/
+.nav {
+  background-color: #2A1B3D;
+  width: 940px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 111.25px 126.25px 110.25px 112.25px 183.25px 119.25px 122.25px;
+  grid-template-rows:    60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav_item-1 { /* Элементы в блоке навигации */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-left: 55.25px;
+}
+.nav_item-2 { /* Элементы в блоке навигации */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-left: 55.25px;
+}
+.nav_item-3 { /* Элементы в блоке навигации */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-left: 55.25px;
+}
+.nav_item-4 { /* Элементы в блоке навигации */
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-left: 55.25px;
+}
+.nav_item-5 { /* Элементы в блоке навигации */
+  grid-column-start: 5;
+  grid-column-end: 6;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-left: 55.25px;
+}
+.nav_item-6 { /* Элементы в блоке навигации */
+  grid-column-start: 6;
+  grid-column-end: 7;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-left: 55.25px;
+}
+.nav_item-7 { /* Элементы  в блоке навигации */
+  grid-column-start: 7;
+  grid-column-end: 8;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  margin-left: 55.25px;
+}
+
+
+.page-wrapper__main {
+  background-color: #888888;
+}
+
+.main {
+  padding-top: 20px;
+}
+
+.top-product_card{
+  display: inline-block;
+  height: 318px;
+  width: 220px;
+  border: 20px #888888;
+}
+
+.card-group {
+   width: 940px;
+   display: grid;
+   grid-template-columns: 310px 320px 310px;
+  grid-template-rows:    143px 143px 143px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 59px;
+}
+
+.bg-11 {
+  background-color: #8265a7;
+  grid-column-start: 1; /* элемент начинается с первой линии колонок */
+  grid-column-end: 2;   /* элемент заканчивается на третьей линии колонок */
+  margin: 10px;
+  margin-left: 0px;
+}
+.bg-12 {
+  background-color: #44318D;
+  grid-column-start: 2; /* элемент начинается с первой линии колонок */
+  grid-column-end: 3;   /* элемент заканчивается на третьей линии колонок */
+  margin: 10px;
+  }
+
+.bg-13 {
+  background-color: #8265a7;
+  grid-column-start: 3; /* элемент начинается с первой линии колонок */
+  grid-column-end: 4;   /* элемент заканчивается на третьей линии колонок */
+  margin: 10px;
+  margin-right: 0px;
+}
+.bg-23{
+  background-color: #44318D;
+  grid-column-start: 3; /* элемент начинается с первой линии колонок */
+  grid-column-end: 4;   /* элемент заканчивается на третьей линии колонок */
+  grid-row-start: 2;    /* элемент начинается со второй линии рядов */
+  grid-row-end: 3;      /* элемент заканчивается на четвёртой линии рядов */
+  margin: 10px;
+  margin-right: 0px;
+}
+.bg-33{
+  background-color: #8265a7;
+  grid-column-start: 3; /* элемент начинается с первой линии колонок */
+  grid-column-end: 4;   /* элемент заканчивается на третьей линии колонок */
+  grid-row-start: 3;    /* элемент начинается со второй линии рядов */
+  grid-row-end: 4;      /* элемент заканчивается на четвёртой линии рядов */
+  margin: 10px;
+  margin-right: 0px;
+  }
+
+.bg-23-12{
+  background-image: url('https://via.placeholder.com/620x266');
+  grid-column-start: 1; /* элемент начинается с первой линии колонок */
+  grid-column-end: 3;   /* элемент заканчивается на третьей линии колонок */
+  grid-row-start: 2;    /* элемент начинается со второй линии рядов */
+  grid-row-end: 4;      /* элемент заканчивается на четвёртой линии рядов */
+  margin: 10px;
+  margin-bottom: 0px;
+}
+.page-footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
