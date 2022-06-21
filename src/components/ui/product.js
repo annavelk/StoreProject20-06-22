@@ -1,6 +1,8 @@
 import React from 'react';
 import GetOldPrice from './getoldprice';
 
+// Компонент, описывающий карточку товара для топа продуктов
+
 function Product (props) {
 
   return (

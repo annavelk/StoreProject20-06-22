@@ -1,6 +1,8 @@
 import React from 'react';
 import  Product  from './product.js';
 
+  // Компонент для взаимодействия карточек товаров в группе
+  
 function Products (props) {
   const {products = []} = props;
 

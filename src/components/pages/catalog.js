@@ -1,9 +1,9 @@
 import React from 'react';
-import Products from './products.js';
+import Products from '../ui/products';
 
-// Компонент для вывода топа продуктов
+// Компонент для вывода каталога продуктов
 
-class ProductTop extends React.Component {
+class Catalog extends React.Component {
   state = {
     products: [],
   };
@@ -11,8 +11,8 @@ class ProductTop extends React.Component {
   componentDidMount() {
     // const jsonData = require('./prod.json');
     // this.setState({products: Object.values(jsonData)});
-    const apiUrl = 'http://localhost:8000/product/';
-     fetch(apiUrl)
+
+     fetch(`http://localhost:8000/product/`)
        .then((response) => response.json())
       //  .then((data) => {console.log(data)})
       .then((data) => this.setState({ products: data }));
@@ -22,11 +22,13 @@ class ProductTop extends React.Component {
     const { products } = this.state;
 
     return (
-      <div className="container content">
+      <div className='container content'>
         <Products products={products} />
       </div>
     );
   }
 }
 
-export default ProductTop;
+export default Catalog;
+
+

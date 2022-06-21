@@ -5,13 +5,13 @@ function Nav() {
   return (
     <nav class="nav">
     <section className="nav_item-1">
-    <a class="" aria-current="" href="#">Главная</a>
+    <a class="" aria-current="" href='#'>Главная</a>
   </section>
   <section className="nav_item-2">
     <a class="" href="#">Компания</a>
   </section>
   <section className="nav_item-3">
-    <a class="" href="#">Каталог</a>
+    <a class="" href="/catalog" title='/catalog'>Каталог</a>
   </section>
   <section className="nav_item-4">
     <a class="" href="#">Новости</a>

@@ -1,5 +1,6 @@
 import React from 'react';
-import Product from './product';
+
+// Компонент для отображения и перечеркивания старой цены, если она больше новой
 
 function GetOldPrice(props) {
   if (props.oldPrice > props.price)
