@@ -8,7 +8,7 @@ function Nav() {
     <a class="" aria-current="" href='#'>Главная</a>
   </section>
   <section className="nav_item-2">
-    <a class="" href="#">Компания</a>
+    <a class="" href="/company" title='/company'>Компания</a>
   </section>
   <section className="nav_item-3">
     <a class="" href="/catalog" title='/catalog'>Каталог</a>

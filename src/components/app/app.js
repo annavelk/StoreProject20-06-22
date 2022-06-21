@@ -5,6 +5,8 @@ import Header from '../layout/header';
 import Footer from '../layout/footer';
 import MainPage from '../layout/main-page';
 import Catalog from '../pages/catalog';
+import Company from '../pages/company';
+import Register from '../ui/register';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Routes>
           <Route index element={<MainPage />} />
           <Route path='catalog' element={<Catalog />} />
+          <Route path='company' element={<Company />} />
         </Routes>
       </main>
       <footer>
