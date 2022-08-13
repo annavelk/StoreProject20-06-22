@@ -7,7 +7,7 @@ function MainPage() {
 	return (
 		<section>
 		{/* <!-- Секция с цветными блоками --> */}
-			<section className='card-group'>
+			<section className='cards-group'>
 				<section class="card bg-11">
 					<a href="#">
 						<h3>Материалы</h3>

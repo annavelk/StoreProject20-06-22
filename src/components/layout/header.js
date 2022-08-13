@@ -61,8 +61,10 @@ function Header() {
           </section>
           {/* <!-- React Component for registration --> */}
           <section className="header-middle_items-4">
-            <form action="#" method="get">
+           <form action="#" method="get">
+            <a class="" href="auth/registration" title='/registration'>
               <input type="button" name="" value="Регистрация" />
+          </a>
             </form>
           </section>
       </section>

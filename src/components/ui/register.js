@@ -1,4 +1,9 @@
-import React from 'react';
+// Компонент с формой регистрации пользователя
+
+import React, { useState } from 'react'
+import axios from 'axios';
+import validator from 'validator';
+import { DOMEN_SERVER, DOMEN_SITE } from '../../config/const';
 
 export default function Register () {
     const [register, setRegister] = useState(() => {
@@ -24,11 +29,11 @@ export default function Register () {
     const submitChackin = event => {
         event.preventDefault();
         if(!validator.isEmail(register.email)) {
-            alert("You did not enter email")
+            alert("Будьте внимательнее, Вы не ввели адрес электронной почты или ввели не правильно!")
         } else if(register.password !== register.password2) {
-            alert("Repeated password incorrectly")
+            alert("К сожалению, пароли не совпадают")
         } else if(!validator.isStrongPassword(register.password, {minSymbols: 0})) {
-            alert("Password must consist of one lowercase, uppercase letter and number, at least 8 characters")
+            alert("Пароль должен состоять не менее чем из 8 символов: минимум одной строчной и одной прописной букв и цифр")
         } else {
             axios.post(DOMEN_SERVER + "/auth/registration/", {
                 username: register.username,
@@ -38,18 +43,18 @@ export default function Register () {
                 if (res.data === true) {
                     window.location.href = DOMEN_SITE + "/auth"
                 } else {
-                    alert("There is already a user with this email")
+                    alert("Пользователь с таким адресом электронной почты уже есть")
                 }
             }).catch(() => {
-                alert("An error occurred on the server")
+                alert("Упс... произошла ошибка на сервере")
             })
         }
     }
     return (
         <div className="form">
-            <h2>Register user:</h2>
+            <h2>Регистрация:</h2>
             <form onSubmit={submitChackin}>
-                <p>Name: <input 
+                <p>Имя: <input 
                 type="username"
                 id="username"
                 name="username"
@@ -64,14 +69,14 @@ export default function Register () {
                 onChange={changeInputRegister}
                 formnovalidate
                 /></p>
-                <p>Password: <input 
+                <p>Пароль: <input 
                 type="password"
                 id="password"
                 name="password"
                 value={register.password}
                 onChange={changeInputRegister}
                 /></p>
-                <p>Repeat password: <input 
+                <p>Повтор пароля: <input 
                 type="password"
                 id="password2"
                 name="password2"

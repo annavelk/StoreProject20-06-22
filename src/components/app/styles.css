@@ -5,29 +5,17 @@ html {
 }
 
 body {
+  background-color: #1D2127;
+  /* background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614263145_24-p-chernaya-tema-fon-27.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   min-height: 100%;
   font-family: 'Cuprum';
+  color: #778293;
 };
-
-/* Правила для ссылок */
-a:link { /*Непосещенная*/
-  color: #ffffff;
-  text-decoration: none;
-}
-a:visited { /*Посещенная — по которой уже выполнялся переход*/
-  color: #ffffff;
-  text-decoration: none;
-}
-a:hover { /*Не нажатая — над которой находится указатель мыши*/
-  color: #2A1B3D;
-  text-decoration: none;
-}
-a:active { /*Нажатая*/
-  color: #A4B3B6;
-  text-decoration: none;
-}
 
 /* Общие правила для header*/
 .header {
@@ -36,11 +24,12 @@ a:active { /*Нажатая*/
   height: 320px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 /* Правила для самой верхней части header */
 .header-top {
-  background-color: #2A1B3D;
+  background-color: #232A34;
   width: 1200px;
   height: 42px;
   display: grid;
@@ -86,15 +75,32 @@ a:active { /*Нажатая*/
   height: 42px;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 0 40px 40px #D83F87 inset, 0 0 0 0 #D83F87;
-  letter-spacing: 0px;
-  color: #ffffff;
-  transition: .15s ease-in-out;
+  color: #FFCB00;
   border: 0px;
+  border-radius: 10px;
+  background: #1D2127;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(35,42,52,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   -7px -7px 20px 0px #252D38,
+   -4px -4px 5px 0px #252D38,
+   7px 7px 20px 0px #14171B,
+   4px 4px 5px 0px #14171B;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+ text-decoration: none;
 }
 .header-top_items-5 input:hover {
-  box-shadow: 0 0 10px 0 #D83F87 inset, 0 0 10px 4px #D83F87;
-  color: #D83F87;
+  background: radial-gradient(circle,  #252D38 30%, #1D2127 80%);
+  color: #FFCB00; 
+  animation: colorchange 3s linear infinite;
+}
+.header-top_items-5 input:active{
+  box-shadow:  4px 4px 6px 0 #252D38,
+              -4px -4px 6px 0 #14171B, 
+    inset -4px -4px 6px 0 #252D38,
+    inset 4px 4px 6px 0 #14171B;
 }
 
 .header-top form {/* Правила для форм в элементах */
@@ -108,7 +114,6 @@ a:active { /*Нажатая*/
 
 /* Правила для средней части header */
 .header-middle {
-  background-color: #A4B3B6;
   width: 1200px;
   height: 158px;
   display: grid;
@@ -116,6 +121,7 @@ a:active { /*Нажатая*/
   grid-template-rows: 158px;
   margin-left: auto;
   margin-right: auto;
+  color: #778293;
 }
 .header-middle_items-1 { /* Правила для элементов */
   grid-column-start: 1;
@@ -140,15 +146,32 @@ a:active { /*Нажатая*/
   height: 45px;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 0 40px 40px #D83F87 inset, 0 0 0 0 #D83F87;
-  letter-spacing: 0px;
-  color: #ffffff;
-  transition: .15s ease-in-out;
+  color: #FFCB00;
   border: 0px;
+  border-radius: 10px;
+  background: #1D2127;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(35,42,52,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   -7px -7px 20px 0px #252D38,
+   -4px -4px 5px 0px #252D38,
+   7px 7px 20px 0px #14171B,
+   4px 4px 5px 0px #14171B;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+ text-decoration: none;
 }
 .header-middle_items-3 input:hover {
-  box-shadow: 0 0 10px 0 #D83F87 inset, 0 0 10px 4px #D83F87;
-  color: #D83F87;
+  background: radial-gradient(circle,  #252D38 30%, #1D2127 80%);
+  color: #FFCB00; 
+  animation: colorchange 3s linear infinite;
+}
+.header-middle_items-3 input:active{
+  box-shadow:  4px 4px 6px 0 #252D38,
+              -4px -4px 6px 0 #14171B, 
+    inset -4px -4px 6px 0 #252D38,
+    inset 4px 4px 6px 0 #14171B;
 }
 .header-middle_items-4 { /* Правила для элементов */
   grid-column-start: 4;
@@ -162,20 +185,39 @@ a:active { /*Нажатая*/
   height: 45px;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 0 40px 40px #D83F87 inset, 0 0 0 0 #D83F87;
-  letter-spacing: 0px;
-  color: #ffffff;
-  transition: .15s ease-in-out;
+  color: #FFCB00;
   border: 0px;
+  border-radius: 10px;
+  background: #1D2127;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(35,42,52,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   -7px -7px 20px 0px #252D38,
+   -4px -4px 5px 0px #252D38,
+   7px 7px 20px 0px #14171B,
+   4px 4px 5px 0px #14171B;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+ text-decoration: none;
+
 }
 .header-middle_items-4 input:hover {
-  box-shadow: 0 0 10px 0 #D83F87 inset, 0 0 10px 4px #D83F87;
-  color: #D83F87;
+  background: radial-gradient(circle,  #252D38 30%, #1D2127 80%);
+  color: #FFCB00; 
+  animation: colorchange 3s linear infinite;
+}
+.header-middle_items-4 input:active{
+  box-shadow:  4px 4px 6px 0 #252D38,
+              -4px -4px 6px 0 #14171B, 
+    inset -4px -4px 6px 0 #252D38,
+    inset 4px 4px 6px 0 #14171B;
 }
 
 /* Общие правила для блока навигации*/
 .nav {
-  background-color: #2A1B3D;
+  background-color: #FFCB00;
+  /* color: #052F6D; */
   width: 940px;
   height: 60px;
   display: grid;
@@ -250,7 +292,7 @@ a:active { /*Нажатая*/
   border: 20px #888888;
 }
 
-.card-group {
+.cards-group {
    width: 940px;
    display: grid;
    grid-template-columns: 310px 320px 310px;
@@ -261,28 +303,26 @@ a:active { /*Нажатая*/
 }
 
 .bg-11 {
-  background-color: #8265a7;
+  background-color: #252D38;
   grid-column-start: 1; /* элемент начинается с первой линии колонок */
   grid-column-end: 2;   /* элемент заканчивается на третьей линии колонок */
   margin: 10px;
-  margin-left: 0px;
 }
 .bg-12 {
-  background-color: #44318D;
+  background-color: #252D38;
   grid-column-start: 2; /* элемент начинается с первой линии колонок */
   grid-column-end: 3;   /* элемент заканчивается на третьей линии колонок */
   margin: 10px;
-  }
-
+}
 .bg-13 {
-  background-color: #8265a7;
+  background-color: #252D38;
   grid-column-start: 3; /* элемент начинается с первой линии колонок */
   grid-column-end: 4;   /* элемент заканчивается на третьей линии колонок */
   margin: 10px;
   margin-right: 0px;
 }
 .bg-23{
-  background-color: #44318D;
+  background-color: #252D38;
   grid-column-start: 3; /* элемент начинается с первой линии колонок */
   grid-column-end: 4;   /* элемент заканчивается на третьей линии колонок */
   grid-row-start: 2;    /* элемент начинается со второй линии рядов */
@@ -291,7 +331,7 @@ a:active { /*Нажатая*/
   margin-right: 0px;
 }
 .bg-33{
-  background-color: #8265a7;
+  background-color: #252D38;
   grid-column-start: 3; /* элемент начинается с первой линии колонок */
   grid-column-end: 4;   /* элемент заканчивается на третьей линии колонок */
   grid-row-start: 3;    /* элемент начинается со второй линии рядов */
@@ -301,7 +341,7 @@ a:active { /*Нажатая*/
   }
 
 .bg-23-12{
-  background-image: url('https://via.placeholder.com/620x266');
+  background-image: url('https://i.gifer.com/WqIJ.gif');
   grid-column-start: 1; /* элемент начинается с первой линии колонок */
   grid-column-end: 3;   /* элемент заканчивается на третьей линии колонок */
   grid-row-start: 2;    /* элемент начинается со второй линии рядов */
@@ -312,4 +352,57 @@ a:active { /*Нажатая*/
 .page-footer {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+/* Правила для ссылок */
+a {
+  outline: none;
+  text-decoration: none;
+}
+a:link { /*Непосещенная*/
+  color: #778293;
+  text-decoration: none;
+}
+a:visited { /*Посещенная — по которой уже выполнялся переход*/
+  color: #778293;
+  text-decoration: none;
+}
+a:hover { /*Не нажатая — над которой находится указатель мыши*/
+  color: #232A34; 
+  text-decoration: none;
+}
+a:active { /*Нажатая*/
+  color: #A4B3B6;
+  text-decoration: none;
+}
+.btn{
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 26px;
+  color: #666;
+  text-decoration: none;
+}
+.btn:hover{
+background: radial-gradient(circle,  #0ff 0%, #e0e5ec 60%);
+  color: rgba(102,102,102,.5); 
+  animation: colorchange 3s linear infinite;
+}
+.btn:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }

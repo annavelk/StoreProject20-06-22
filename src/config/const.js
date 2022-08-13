@@ -1,0 +1,2 @@
+let DOMEN_SERVER
+let DOMEN_SITE

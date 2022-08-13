@@ -7,8 +7,9 @@ import MainPage from '../layout/main-page';
 import Catalog from '../pages/catalog';
 import Company from '../pages/company';
 import Register from '../ui/register';
+import 'typeface-roboto';
 
-function App() {
+function App () {
   return (
     <BrowserRouter>
       <header>
@@ -16,9 +17,10 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route index element={<MainPage />} />
+          <Route path='main_page' element={<MainPage />} />
           <Route path='catalog' element={<Catalog />} />
           <Route path='company' element={<Company />} />
+          <Route path='auth/registration' element={<Register />} />
         </Routes>
       </main>
       <footer>
@@ -29,3 +31,4 @@ function App() {
 }
 
 export default App;
+

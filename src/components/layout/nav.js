@@ -5,7 +5,7 @@ function Nav() {
   return (
     <nav class="nav">
     <section className="nav_item-1">
-    <a class="" aria-current="" href='#'>Главная</a>
+    <a class="" href="/main_page" title='/main_page'>Главная</a>
   </section>
   <section className="nav_item-2">
     <a class="" href="/company" title='/company'>Компания</a>
