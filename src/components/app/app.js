@@ -20,6 +20,7 @@ function App () {
           <Route path='main_page' element={<MainPage />} />
           <Route path='catalog' element={<Catalog />} />
           <Route path='company' element={<Company />} />
+          <Route path='catalog' element={<Catalog />} />
           <Route path='auth/registration' element={<Register />} />
         </Routes>
       </main>

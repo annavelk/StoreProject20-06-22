@@ -8,7 +8,7 @@ function Header() {
       <section class="header-top">
          <section className="header-top_items-1">
           <a class="" href="#">
-            <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="logo" />
+            <img src="public\img\logo.png" width="220" height="47" alt="logo" />
             </a>
           </section>
            {/* React Component for search */}
@@ -50,7 +50,7 @@ function Header() {
           <section className="header-middle_items-2">
             <a class="" href="#">
               <p className="header_tel">+7 800 555-86-28</p>
-              <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+              <p>г. Красноярск, пр. Мира, 1</p>
             </a>
           </section>
           {/* <!-- React Component for login --> */}

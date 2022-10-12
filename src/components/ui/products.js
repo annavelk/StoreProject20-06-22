@@ -5,9 +5,7 @@ import  Product  from './product.js';
   
 function Products (props) {
   const {products = []} = props;
-
-  return (
-    <div className='card-group'>
+    return (<div className='cards-group_top_product'>
       {products.length ? (
         products.map((product) => <Product key={product.id}{...product} />)
       ):(

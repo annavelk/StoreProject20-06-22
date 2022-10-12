@@ -5,7 +5,7 @@ import React from 'react';
 function GetOldPrice(props) {
   if (props.oldPrice > props.price)
   {
-    return (<div><font color="red"><del>Старая цена: {props.oldPrice}</del></font></div>)
+    return (<div className='top-product_oldprice'>{props.oldPrice} руб.</div>)
   }
 
   return null;
