@@ -1,7 +1,6 @@
 import React from 'react';
 import Nav from '../layout/nav.js';
-import  '../app/styles.css';
-
+import  '../app/styles.less';
 
 
 function Footer() {
@@ -19,7 +18,7 @@ function Footer() {
         </section>
 
 
-          <Nav />
+        <Nav />
 
       </section>
 
@@ -32,13 +31,13 @@ function Footer() {
           </p>
         </section>
         <section>
-          <a href="#">
+          <a href='/materials' title='/materials'>
             <img src="https://via.placeholder.com/44x44" alt="" />
           </a>
-          <a href="#">
+          <a href='/materials' title='/materials'>
             <img src="https://via.placeholder.com/44x44" alt="" />
           </a>
-          <a href="#">
+          <a href='/materials' title='/materials'>
             <img src="https://via.placeholder.com/44x44" alt="" />
           </a>
         </section>

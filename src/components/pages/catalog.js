@@ -1,4 +1,5 @@
 import React from 'react';
+import { apiUrlList } from '../config';
 import Products from '../ui/products';
 
 // Компонент для вывода каталога продуктов
@@ -12,8 +13,8 @@ class Catalog extends React.Component {
     // const jsonData = require('./prod.json');
     // this.setState({products: Object.values(jsonData)});
 
-     fetch(`http://localhost:8000/product/`)
-       .then((response) => response.json())
+    fetch(apiUrlList)
+      .then((response) => response.json())
       //  .then((data) => {console.log(data)})
       .then((data) => this.setState({ products: data }));
   }

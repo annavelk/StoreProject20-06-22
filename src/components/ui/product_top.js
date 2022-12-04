@@ -1,37 +1,30 @@
 import React from 'react';
-import Product from './product.js';
-
+// import products from './products.js';
+import Products from './products.js';
+import { apiUrlList } from '../config.js';
 // Компонент для вывода топа продуктов
 
 class ProductTop extends React.Component {
   state = {
-    products: {},
+    products: [],
   };
 
-    
   componentDidMount() {
+    // const jsonData = require('./prod.json');
+    // this.setState({products: Object.values(jsonData)});
 
-    const apiUrl = 'http://localhost:8000/product/';
-     fetch(apiUrl)
-       .then((response) => response.json())
-
-     //.then((data) => {console.log(data.id)})
+    fetch(apiUrlList)
+      .then((response) => response.json())
+    //  .then((data) => {console.log(data)})
       .then((data) => this.setState({ products: data }));
-      
-    
-      
   }
 
   render() {
     const { products } = this.state;
-    
+
     return (
-      <div className='cards-group_top_product'>
-        {products.length > 4 ? (
-        products.map((product) => <Product {...product}/>)
-      ):(
-        <h4>Не найдено</h4>
-)}
+      <div className='container content'>
+        <Products products={products} />
       </div>
     );
   }
